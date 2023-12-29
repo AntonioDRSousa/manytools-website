@@ -1,3 +1,3 @@
 # manytools-website
 
-[Link text](https://antoniodrsousa.github.io/manytools-website/)
+<https://antoniodrsousa.github.io/manytools-website/>
