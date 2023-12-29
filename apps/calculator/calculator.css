@@ -1,0 +1,48 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
+	flex-direction: column;
+	margin = auto;
+}
+
+.label-title{
+	width: 240px;
+	height: 60px;
+	display: table-cell;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+	
+.label-screen{
+	width: 240px;
+	height: 60px;
+	display: table-cell;
+	background-color: black;
+	color: lime;
+	font-weight: bold;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 24px;
+}
+			
+button{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.div{
+	display: flex;
+	flex-direction: row;
+}
+
+.div-buttom{
+	font-size: 0;
+}
