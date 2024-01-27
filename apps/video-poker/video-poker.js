@@ -246,9 +246,3 @@ var bdraw = false;
 var yourBet = 0;
 
 var bok = true;
-
-// corregir exibicao de cartas
-
-// guide of poker in another html page
-
-
