@@ -5,7 +5,6 @@ function size_d(){
 change_signal = function(){
 	if (s[0]=="+"){
 		var c = "-";
-		console.log("mudou");
 	}
 	else{
 		var c = "+";
@@ -36,28 +35,6 @@ show_number = function(){
 	}
 	else{
 		document.getElementById("number").innerHTML = s;
-	}
-}
-
-op_bin = function(x,y,op){
-	console.log("entrou");
-	if(op=="+"){
-		return x+y;
-	}
-	else if(op=="-"){
-		return x-y;
-	}
-	else if(op=="*"){
-		return x*y;
-	}
-	else if(op=="/"){
-		return x/y;
-	}
-}
-
-op_mon = function(x,op){
-	if(op=="sqrt"){
-		return Math.sqrt(x);
 	}
 }
 
@@ -93,6 +70,35 @@ push = function(op){
 	s = "+";
 	document.getElementById("number").innerHTML = a.toString();
 	operation=op;
+}
+
+op_bin = function(x,y,op){
+	if(op=="+"){
+		return x+y;
+	}
+	else if(op=="-"){
+		return x-y;
+	}
+	else if(op=="*"){
+		return x*y;
+	}
+	else if(op=="/"){
+		return x/y;
+	}
+}
+
+op_mon = function(op){
+	if(op=="sqrt"){
+		console.log(Math.sqrt(a));
+		a = Number(s);
+		a = Math.sqrt(a);
+		s = a.toString();
+		document.getElementById("number").innerHTML = a.toString();
+	}
+}
+
+equals = function(){
+	push(operation);
 }
 
 const dop = {
